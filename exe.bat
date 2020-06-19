@@ -1,0 +1,1 @@
+java -jar C:\Users\lgdfj\Downloads\Aula060620\dist\Aula060620.jar

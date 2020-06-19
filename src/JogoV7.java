@@ -9,28 +9,31 @@ public class JogoV7 {
         Goblin g1 = new Goblin();
         Zumbi g2 = new Zumbi();
         
-        Terra4169 terra4169 = new Terra4169(); 
         
         
         
         System.out.println("Digite o nome do seu personagem: ");
         String nome = scanner.next();
-        Guerreiro jogador = new Guerreiro(nome);
+        Personagem jogador = new Personagem(nome);
         
         //Criando um personagem guerreiro:
         
         System.out.println("Seja bem vindo: " + jogador.getNome());
         
         System.out.println("Você acaba de comprar um simulador, qual Terra você deseja jogar primeiro? ");
-        System.out.println("Escolha entre 1)Terra 4-169 1   2)Universo 2  ou  3)Universo 3 ");
         
-        Quests quests = new Quests();
-        System.out.println("Qual quest vc deseja? 1, 2 ou 3?");
+        
+        Quests quests = new Quests(jogador);
+        System.out.println("Escolha entre 1)Terra 4-169 1   2)TerraClownPlanet  ou  3)Universo 3 ");
         System.out.print("Opção: ");
         String opcao = new java.util.Scanner(System.in).next();
         java.lang.reflect.Method method;       
         method = quests.getClass().getMethod("quest" + opcao);
         method.invoke(quests);
+        
+        
+        
+        
         
         
         System.out.println(method.toString() + "method = ");  

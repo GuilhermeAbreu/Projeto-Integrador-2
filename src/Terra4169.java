@@ -25,10 +25,11 @@ public class Terra4169 implements Terra{
         System.out.println("------------------------------------");
         System.out.println("Você já esta presente no Terra 4-169");
         System.out.println("------------------------------------");
-        System.out.println("Você está em uma floresta, é dia, o que deseja fazer?");
+        System.out.println("Você está no meio de uma cidade com uma grande construção,barulhos estranhos em sua volta, o que deseja fazer?");
         System.out.println("1) explorar 2)revirar meus itens");
         System.out.print("Opção: ");
         Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
 
         
     }
@@ -45,11 +46,6 @@ public class Terra4169 implements Terra{
         {
             Historia4();
         }
-        
-        
-        
-        
-        
     }
     
     public void Historia3() {
@@ -67,6 +63,9 @@ public class Terra4169 implements Terra{
         System.out.println("Glasses Man: De forma alguma, diga meu jovem");
         System.out.println(personagem.getNome() + ": " + " ÓTIMO!\n" + "Acho que...Primeiro, quero te agradecer! E fale mais sobre sua visão sistêmica?");
         System.out.println("Glasses Man: Sou a favor da liberdade humana do sistema americano, de deixar o povo determinar as leis. Não acho que... Se eu tivesse que... Sabe, se alguém me pressionasse a dizer se vai ser bom ou ruim... Acho que pode acabar não sendo tão bom pras pessoas. ");
+        System.out.println(personagem.getNome()+ ": "+ " OPAa! Estamos sendo atacados pelos zumbis...*** a gravação interrompida*** ");
+        //faz um ataque (chama Historia 3)
+        //depois faz mais algumas perguntas e volta para o menu
         
     }
  

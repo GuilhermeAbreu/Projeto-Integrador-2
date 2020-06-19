@@ -13,9 +13,7 @@ public class Personagem  {
     private void pri(){
         System.out.println("privado?");
     }
-    
-    
-    
+  
     private ArrayList<Personagem> listaItens = new ArrayList<>();
 
     public String getNome() {
@@ -51,7 +49,8 @@ public class Personagem  {
     public String itens()
     {
         String itens = "";
-        System.out.println("Você não tem nenhum item");
+        System.out.println("Revirando itens....");
+        System.out.println("Não possuo nenhum item");
         return itens;
     }
    
